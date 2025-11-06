@@ -12,17 +12,19 @@ body {
   border-radius: 15px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  min-width: 320px;
 }
 
 h1 {
   margin-bottom: 20px;
 }
 
-input {
+input[type="text"], input[type="password"] {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 200px;
+  margin: 5px;
 }
 
 button {
@@ -39,7 +41,24 @@ button:hover {
   background: #357ABD;
 }
 
+.clock {
+  margin: 15px 0 20px;
+}
+
 #weatherResult {
   margin-top: 20px;
   font-size: 18px;
+}
+
+#logoutBtn {
+  background: #e24a4a;
+}
+
+.card {
+  background: #f7f9fc;
+  border: 1px solid #e6eaf2;
+  border-radius: 12px;
+  padding: 14px;
+  display: inline-block;
+  min-width: 260px;
 }
