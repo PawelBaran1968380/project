@@ -13,7 +13,7 @@ body {
   border-radius: 15px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  min-width: 340px;
+  min-width: 360px;
 }
 
 h1 { margin-bottom: 20px; }
@@ -44,8 +44,8 @@ button:hover { background: #357ABD; }
 .msg { font-size: 14px; color: #c0392b; min-height: 18px; }
 
 /* Sections */
-.clock { margin: 15px 0 20px; }
-#weatherResult { margin-top: 20px; font-size: 18px; }
+.clock { margin: 15px 0 16px; }
+#weatherResult { margin-top: 16px; font-size: 18px; }
 
 #logoutBtn { background: #e24a4a; }
 #logoutBtn:hover { background: #c93b3b; }
@@ -57,5 +57,26 @@ button:hover { background: #357ABD; }
   padding: 14px;
   display: inline-block;
   min-width: 260px;
+}
+
+/* Favourites */
+.favs {
+  margin: 10px 0 6px;
+}
+.favs h3 {
+  margin: 6px 0 6px;
+  font-size: 16px;
+}
+#favButtons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+#favButtons .fav-btn {
+  background: #6c9cf0;
+}
+#favButtons .fav-btn:hover {
+  background: #4f7fd4;
 }
 
