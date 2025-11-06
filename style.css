@@ -1,3 +1,4 @@
+/* Base */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(120deg, #74ebd5, #9face6);
@@ -12,47 +13,42 @@ body {
   border-radius: 15px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  min-width: 320px;
+  min-width: 340px;
 }
 
-h1 {
-  margin-bottom: 20px;
-}
+h1 { margin-bottom: 20px; }
 
+/* Inputs & Buttons */
 input[type="text"], input[type="password"] {
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  width: 200px;
+  width: 220px;
   margin: 5px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 16px;
   border: none;
   background: #4a90e2;
   color: white;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  margin-left: 10px;
+  margin: 6px 6px 0 6px;
 }
 
-button:hover {
-  background: #357ABD;
-}
+button:hover { background: #357ABD; }
 
-.clock {
-  margin: 15px 0 20px;
-}
+.row { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
 
-#weatherResult {
-  margin-top: 20px;
-  font-size: 18px;
-}
+.msg { font-size: 14px; color: #c0392b; min-height: 18px; }
 
-#logoutBtn {
-  background: #e24a4a;
-}
+/* Sections */
+.clock { margin: 15px 0 20px; }
+#weatherResult { margin-top: 20px; font-size: 18px; }
+
+#logoutBtn { background: #e24a4a; }
+#logoutBtn:hover { background: #c93b3b; }
 
 .card {
   background: #f7f9fc;
@@ -62,3 +58,4 @@ button:hover {
   display: inline-block;
   min-width: 260px;
 }
+

@@ -10,16 +10,22 @@
   <div class="container">
     <h1>Current Weather and Local Time</h1>
 
-    <!-- Virtual Identity with PIN -->
-    <div id="login-section">
-      <input type="text" id="username" placeholder="Enter your name..." />
-      <input type="password" id="pin" placeholder="Enter 4-digit PIN..." maxlength="4" />
-      <button id="loginBtn">Sign In</button>
-    </div>
+    <!-- Virtual Identity: multi-user with PIN -->
+    <div id="auth">
+      <div id="login-section">
+        <input type="text" id="username" placeholder="Enter your name..." />
+        <input type="password" id="pin" placeholder="Enter 4-digit PIN..." maxlength="4" />
+        <div class="row">
+          <button id="createBtn">Create Account</button>
+          <button id="loginBtn">Sign In</button>
+        </div>
+        <p id="authMsg" class="msg"></p>
+      </div>
 
-    <div id="welcome-section" style="display:none;">
-      <p>Welcome, <span id="userDisplay"></span>!</p>
-      <button id="logoutBtn">Log out</button>
+      <div id="welcome-section" style="display:none;">
+        <p>Welcome, <span id="userDisplay"></span>!</p>
+        <button id="logoutBtn">Log out</button>
+      </div>
     </div>
 
     <!-- Clock -->
@@ -38,3 +44,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
